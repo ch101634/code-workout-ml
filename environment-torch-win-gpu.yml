@@ -1,0 +1,84 @@
+name: tw-gpu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.12.12
+    # Pip Manager
+  - pip
+
+  # Jupyter Environment
+  - jupyterlab
+  - jupyterlab-myst
+  - notebook        # Classic Jupyter Notebook UI
+  - ipykernel       # Kernel for Jupyter
+  - ipywidgets      # Interactive widgets
+
+  # Documentation
+  - jupyter-book
+
+  # Core Data Science
+  - numpy
+  - pandas
+  - pyarrow
+  - scipy
+  - statsmodels
+  - pillow          # Image processing
+  - openpyxl        # Excel xlsx
+  - xlrd            # Older xls
+  - lxml            # HTML/XML parsing
+  
+  # Machine Learning
+  - scikit-learn
+  - lightgbm
+  - xgboost
+  # - catboost # numpy 2.0+ compatibility issues
+  - flaml
+  - optuna
+
+  # Visualization
+  - matplotlib
+  - seaborn
+  - graphviz
+  - python-graphviz
+  - pydot
+
+  # Utilities
+  - requests
+  - tqdm
+
+  # Deep Learning Tools
+  - tensorboard
+  - transformers
+  - tokenizers
+  - datasets
+
+  # MLOps
+  - gradio
+  - wandb
+
+  # Interpretability
+  - shap
+
+  # PyTorch (Windows Native GPU)
+  - pytorch::pytorch=*=*cuda*
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pytorch::pytorch-cuda=12.4
+
+  - pip:
+    # Deep Learning Utilities (pip recommended)
+    - protobuf>=6.33.5
+    - accelerate
+    
+    # Kaggle & Data
+    - kagglehub                 # Kaggle datasets
+    
+    # Advanced ML Tools (pip-only)
+    - optuna-dashboard          # Optuna dashboard
+    - interpret                 # InterpretML
+    - dcor                      # Distance correlation
