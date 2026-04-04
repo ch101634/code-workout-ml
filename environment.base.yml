@@ -47,6 +47,7 @@ dependencies:
   # Visualization
   - matplotlib
   - seaborn
+  - missingno
   - graphviz        # Decision tree visualization
   - python-graphviz
   - pydot
