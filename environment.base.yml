@@ -68,3 +68,5 @@ dependencies:
     - optuna-dashboard          # Optuna dashboard
     - interpret                 # InterpretML
     - dcor                      # Distance correlation
+    # Structural Equation Models Optimization in Python
+    - semopy
